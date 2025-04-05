@@ -1,0 +1,59 @@
+Arguments: 
+  /usr/local/bin/node /Users/alehverishko/.node/corepack/yarn/1.22.15/bin/yarn.js
+
+PATH: 
+  /Users/alehverishko/.sdkman/candidates/java/current/bin:/usr/local/opt/python/libexec/bin:/usr/local/bin:/Users/alehverishko/.rbenv/shims:/Users/alehverishko/.rbenv/bin:/Users/alehverishko/.console-ninja/.bin:/Users/alehverishko/.nvm/versions/node/v18.18.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/opt/python/libexec/bin:/Users/alehverishko/.rbenv/shims:/Users/alehverishko/.rbenv/bin:/Users/alehverishko/.console-ninja/.bin:/Users/alehverishko/.nvm/versions/node/v18.18.0/bin:/Users/alehverishko/Library/Android/sdk/emulator:/Users/alehverishko/Library/Android/sdk/tools:/Users/alehverishko/Library/Android/sdk/tools/bin:/Users/alehverishko/Library/Android/sdk/platform-tools:/Users/alehverishko/Library/Android/sdk/emulator:/Users/alehverishko/Library/Android/sdk/tools:/Users/alehverishko/Library/Android/sdk/tools/bin:/Users/alehverishko/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.14.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@ton-community/func-js-bin/-/func-js-bin-0.4.4-newops.1.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/Users/alehverishko/.node/corepack/yarn/1.22.15/lib/cli.js:141512:19)
+      at Object.onceWrapper (node:events:639:28)
+      at ClientRequest.emit (node:events:520:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:758:9)
+      at Object.onceWrapper (node:events:639:28)
+      at TLSSocket.emit (node:events:532:35)
+      at TLSSocket.Socket._onTimeout (node:net:501:8)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+npm manifest: 
+  {
+      "name": "get-started-with-ton",
+      "version": "0.0.1",
+      "scripts": {
+          "start:script": "ts-node ./scripts/mine.ts",
+          "start": "blueprint run",
+          "build": "blueprint build",
+          "test": "jest --verbose"
+      },
+      "devDependencies": {
+          "@ton/blueprint": "^0.25.0",
+          "@ton/sandbox": "^0.22.0",
+          "@ton/test-utils": "^0.4.2",
+          "@types/jest": "^29.5.14",
+          "@types/node": "^22.8.7",
+          "jest": "^29.7.0",
+          "prettier": "^3.3.3",
+          "@ton/ton": "^15.1.0",
+          "@ton/core": "~0",
+          "@ton/crypto": "^3.3.0",
+          "ts-jest": "^29.2.5",
+          "ts-node": "^10.9.2",
+          "typescript": "^5.6.3"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
